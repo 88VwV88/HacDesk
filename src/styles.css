@@ -6,22 +6,26 @@
     font-size: 62.5%;
     box-sizing: border-box;
 
+    --primary-accent: #eb5e28;
     --primary-dark: #252422;
     --seondary-dark: #403d39;
     --primary-light: #ccc5b9;
     --secondary-light: #fffcf2;
+}
 
+html {
     background-color: var(--primary-light);
-    color: var(--secondary-light);
 }
 
 header {
     background-color: var(--primary-dark);
-    display: flex;
-    justify-content: end;
-    align-items: center;
+    width: 100%;
 
     grid-area: header;
+}
+
+header > * {
+    margin: 0 0.25rem;
 }
 
 body {
@@ -43,17 +47,8 @@ body {
 main {
     margin: 2rem 0;
     background-color: var(--seondary-dark);
-    /* grid properties */
-    display: grid;
-    grid-template-rows: 1fr 8fr 8fr 1fr;
-    grid-template-columns: 1fr 8fr 8fr 8fr 1fr;
-    grid-template-areas:
-        ". .    .    .  ."
-        ". team team p1 ."
-        ". p2   p3   p4 ."
-        ". .    .    .  .";
-    row-gap: 1rem;
-    column-gap: 2rem;
+    display: block;
+    padding: 0 1rem;
 
     grid-area: main;
 }
@@ -106,8 +101,9 @@ section {
 .profile {
     font-size: 1.75rem;
     text-align: center;
-    padding: 1rem 0;
-    background-color: #eb5e28;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--primary-accent);
     border-radius: 0.75rem;
 }
 
@@ -122,7 +118,7 @@ section {
 
 #menu {
     height: 4rem;
-    width: 40%;
+    width: fit-content;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -130,7 +126,7 @@ section {
 
 #team {
     width: 100%;
-    font-size: xx-large;
+    font-size: 3.5rem;
     font-family: 'Kode Mono', 'Consolas';
     color: var(--primary-light);
     text-align: center;
@@ -140,16 +136,14 @@ section {
 }
 
 #hackmol-logo {
-    height: 5rem;
     grid-area: hackmol;
-
+    height: 2rem;
     padding-left: 35%;
 }
 
 #gdsc-logo {
-    height: 5rem;
     grid-area: gdsc;
-
+    height: 2rem;
     padding-left: 35%;
 }
 
@@ -160,4 +154,36 @@ section {
     margin: 2rem;
 
     grid-area: divider;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    main {
+        /* grid properties */
+        display: grid;
+        grid-template-rows: 1fr 8fr 8fr 1fr;
+        grid-template-columns: 1fr 8fr 8fr 8fr 1fr;
+        grid-template-areas:
+            ". .    .    .  ."
+            ". team team p1 ."
+            ". p2   p3   p4 ."
+            ". .    .    .  .";
+        row-gap: 1rem;
+        column-gap: 2rem;
+    }
+
+    #hackmol-logo {
+        height: 5rem;
+        padding-left: 35%;
+    }
+
+    #gdsc-logo {
+        height: 5rem;
+        padding-left: 35%;
+    }
 }
