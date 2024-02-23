@@ -146,6 +146,8 @@ section {
     width: 100%;
     font-size: 10rem;
     font-family: 'ONE PIECE', 'Kode Mono', 'Consolas';
+    font-size: 5rem;
+    font-family: 'Kode Mono', 'Consolas';
     color: var(--secondary-light);
     text-align: center;
 

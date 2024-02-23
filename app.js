@@ -6,7 +6,6 @@ const port = 3000;
 app.use(morgan("tiny"));
 
 app.use(express.static('./public'));
-app.use(express.static('./public/pages'));
 
 app.route('/', (_, res) => {
     res.sendFile('index.html');
