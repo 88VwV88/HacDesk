@@ -1,0 +1,54 @@
+{
+    "key": "AuDuP4qlxNPP5rsm5gNgXNRT_-Zb24T_CUJ7lUR5eg8vtxV2IaJCG_XTlTUxN0Lx",
+    "origin": [31.396131584616917, 75.53578883251701],
+    "locations": [
+        {
+            "center": [31.396131584616917, 75.53578883251701],
+            "info": {
+                "title": "Admin Block",
+                "subTitle": "Admin Block",
+                "text": "0"
+            }
+        },
+        {
+            "center": [31.39822124307628, 75.53504723599318],
+            "info": {
+                "title": "NIT J Workshop",
+                "subTitle": "NITJ Business Incubator",
+                "text": "1"
+            }
+        },
+        {
+            "center": [31.397194701706955, 75.5375167271428],
+            "info": {
+                "title": "Lecture Theatre",
+                "subTitle": "LT-101 to LT-301",
+                "text": "2"
+            }
+        },
+        {
+            "center": [31.39503102749282, 75.53576824759647],
+            "info": {
+                "title": "IT CSE Building",
+                "subTitle": "CSE Departement",
+                "text": "3"
+            }
+        },
+        {
+            "center": [31.39649301352915, 75.53667616341669],
+            "info": {
+                "title": "Campus Cafe",
+                "subTitle": "Fast Food",
+                "text": "4"
+            }
+        },
+        {
+            "center": [31.3972182448077, 75.53145247900606],
+            "info": {
+                "title": "NITJ Main Ground",
+                "subTitle": "Sports Ground / Cricket Ground",
+                "text": "5"
+            }
+        }
+    ]
+}

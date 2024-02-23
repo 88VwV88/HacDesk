@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Kode+Mono:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+:root {
+    font-family: 'Fira Mono', 'JetBrains Mono', Arial, Helvetica, sans-serif;
+    font-size: 62.5%;
+    box-sizing: border-box;
+
+    --primary-accent: #eb5e28;
+    --primary-dark: #252422;
+    --seondary-dark: #403d39;
+    --primary-light: #ccc5b9;
+    --secondary-light: #fffcf2;
+}
+
+html {
+    background-color: var(--primary-light);
+}
+
+header {
+    background-color: var(--primary-dark);
+    width: 100%;
+
+    grid-area: header;
+}
+
+header > * {
+    margin: 0 0.25rem;
+}
+
+a {
+    color: var(--secondary-light);
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    font-weight: 400;
+
+    display: grid;
+    grid-template-rows: 7.5rem 100% 7rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main  "
+        "footer";
+}
+
+main {
+    margin: 2rem 0;
+    background-color: var(--seondary-dark);
+    display: block;
+    padding: 0 1rem;
+
+    display: grid;
+    grid-template-columns: 2rem auto 2rem;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        ". team ."
+        ". p1   ."
+        ". p2   ."
+        ". p3   ."
+        ". p4   .";
+    row-gap: 1rem;
+
+
+    grid-area: main;
+}
+
+footer {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "hackmol gdsc"
+        "divider divider"
+        "section section";
+
+    grid-area: footer;
+}
+
+
+section {
+    text-align: center;
+    font-size: large;
+    padding: 1rem;
+    color: var(--secondary-light);
+    background-color: var(--primary-dark);
+
+    grid-area: section;
+}
+
+.btn {
+    padding: 0.50rem;
+    margin: 0 0.25rem;
+    box-shadow: 0.125rem 0.125rem 0 var(--primary-accent);
+    font-size: 1.75rem;
+    background-color: black;
+    border-radius: 0.50rem;
+    transition: font-size .2s ease-in-out;
+}
+
+.btn:hover {
+    font-size: 2rem;
+    transition: font-size .2s ease-in-out;
+}
+
+.name {
+    font-family: 'Kode Mono', 'Consolas';
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+.profile {
+    font-size: 1.75rem;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    background-color: var(--primary-accent);
+    border-radius: 0.75rem;
+    box-shadow: 0.25rem 0.25rem 0.5rem var(--primary-dark);
+}
+
+#title {
+    font-family: 'Kode Mono', 'Consolas';
+    text-align: left;
+    color: var(--secondary-light);
+    margin: 0;
+    padding-left: 3rem;
+    width: 80%;
+}
+
+#menu {
+    height: 4rem;
+    width: fit-content;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#team {
+    width: 100%;
+    font-size: 10rem;
+    font-family: 'ONE PIECE', 'Kode Mono', 'Consolas';
+    color: var(--secondary-light);
+    text-align: center;
+
+    grid-area: team;
+    place-self: center;
+}
+
+#hackmol-logo {
+    grid-area: hackmol;
+    height: 2rem;
+    padding-left: 35%;
+}
+
+#gdsc-logo {
+    grid-area: gdsc;
+    height: 2rem;
+    padding-left: 35%;
+}
+
+#divider {
+    border: var(--secondary-light) dashed 1px;
+    width: 95%;
+    height: 0;
+    margin: 2rem;
+
+    grid-area: divider;
+}
+
+@media only screen and (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    main {
+        /* grid properties */
+        display: grid;
+        grid-template-rows: 1fr 8fr 8fr 1fr;
+        grid-template-columns: 1fr 8fr 8fr 8fr 1fr;
+        grid-template-areas:
+            ". .    .    .  ."
+            ". team team p1 ."
+            ". p2   p3   p4 ."
+            ". .    .    .  .";
+        column-gap: 2rem;
+    }
+
+    #hackmol-logo {
+        height: 5rem;
+        padding-left: 35%;
+    }
+
+    #gdsc-logo {
+        height: 5rem;
+        padding-left: 35%;
+    }
+}
