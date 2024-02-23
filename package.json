@@ -4,7 +4,8 @@
   "description": "Hack Mol Project by team mugiwara",
   "main": "app.js",
   "scripts": {
-    "build": "vite build public",
+    "start": "vite build; vite preview",
+    "build": "vite build",
     "preview": "vite preview"
   },
   "repository": {
@@ -26,9 +27,6 @@
   "homepage": "https://github.com/88VwV88/HackDesk#readme",
   "dependencies": {
     "express": "^4.18.2",
-    "morgan": "^1.10.0",
-    "react-dom": "^18.2.0",
-    "stream-chat": "^8.18.2",
-    "stream-chat-react": "^11.10.0"
+    "morgan": "^1.10.0"
   }
 }

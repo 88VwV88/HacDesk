@@ -5,21 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="css/styles.css">
 
-    <link rel="shortcut icon" href="/assets/favicon-DtJDNUnN.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>HackDesk</title>
-  <link rel="stylesheet" crossorigin href="/assets/index-HmVb23au.css">
 </head>
 <body>
     <header style="grid-area: header">
-        <h1 id="title"><a href="/">HackDesk</a></h1>
+        <h1 id="title" style="font-size: 3rem"><a href="/">HackDesk</a></h1>
         <nav id="menu">
             <button type="button" class="btn"><a href="map.html">Map</a></button>
             <button type="button" class="btn"><a href="chat.html">ChatBox</a></button>
-            <button type="button" class="btn"><a href="comps.html">Complaints</a></button>
+            <button type="button" class="btn"><a href="suggest.html">FAQs</a></button>
         </nav>
     </header>
     <main style="grid-area: main">
+        <h1 id="title">HackDesk</h1>
         <span id="team"> Team Mugiwara</span>
         <div id="lead-profile" class="profile" style="grid-area: p1">
             <p class="name">Vivek Dhiman</p>
@@ -54,13 +55,13 @@
             </article>
     </main>
     <footer style="grid-area: footer">
-        <a href="https://www.hackmol.com"><img id="hackmol-logo" src="/assets/hackmol-oTdN3ujr.svg" alt="hackmol logo"></a>
-        <a href="https://gdsc.community.dev/dr-b-r-ambedkar-national-institute-of-technology-nit-jalandhar"><img id="gdsc-logo" src="data:image/svg+xml,%3csvg%20width='180'%20height='90'%20viewBox='0%200%20100%2052'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cpath%20d='M23.8113%2026.3979L40.0507%2016.5247C43.8733%2014.2021%2045.1777%209.05227%2042.9734%205.02467C40.769%200.997064%2035.8815%20-0.377373%2032.059%201.94524L3.99698%2019.0126L23.8113%2026.3979Z'%20fill='%23EA4335'%20/%3e%3cpath%20d='M36.0439%2051.7903C38.8014%2051.7903%2041.4928%2050.2767%2042.9706%2047.58C45.1749%2043.5524%2043.8705%2038.4027%2040.048%2036.0801L11.986%2019.0128C8.16346%2016.6902%203.27593%2018.0646%201.07158%2022.0922C-1.13276%2026.1198%200.17169%2031.2696%203.9942%2033.5922L32.0562%2050.6595C33.3194%2051.425%2034.6899%2051.7903%2036.0439%2051.7903Z'%20fill='%234285F4'%20/%3e%3cpath%20d='M63.9585%2051.7897C65.3125%2051.7897%2066.683%2051.4244%2067.9461%2050.6588L96.0081%2033.5916L76.4497%2026.0496L59.9626%2036.0794C56.1401%2038.4021%2054.8274%2043.5518%2057.04%2047.5794C58.5095%2050.2761%2061.201%2051.7897%2063.9585%2051.7897Z'%20fill='%23FBBC04'%20/%3e%3cpath%20d='M92.0016%2034.7227C94.7591%2034.7227%2097.4506%2033.2178%2098.9284%2030.5124C101.133%2026.4848%2099.8283%2021.3351%2096.0058%2019.0125L67.9437%201.94524C64.1212%20-0.377369%2059.2337%200.997064%2057.0294%205.02465C54.825%209.05224%2056.1294%2014.202%2059.952%2016.5246L88.014%2033.5919C89.2689%2034.3574%2090.6477%2034.7227%2092.0016%2034.7227Z'%20fill='%2334A853'%20/%3e%3c/svg%3e" alt="GDSC logo"></a>
+        <a href="https://www.hackmol.com"><img id="hackmol-logo" src="images/hackmol.svg" alt="hackmol logo"></a>
+        <a href="https://gdsc.community.dev/dr-b-r-ambedkar-national-institute-of-technology-nit-jalandhar"><img id="gdsc-logo" src="images/GDSCLogo.svg" alt="GDSC logo"></a>
         <div id="divider"></div>
         <section>
             Developed by VwV
-            <a href="https://github.com/88VwV88"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='white'%20class='bi%20bi-github'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M8%200C3.58%200%200%203.58%200%208c0%203.54%202.29%206.53%205.47%207.59.4.07.55-.17.55-.38%200-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01%201.08.58%201.23.82.72%201.21%201.87.87%202.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95%200-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12%200%200%20.67-.21%202.2.82.64-.18%201.32-.27%202-.27s1.36.09%202%20.27c1.53-1.04%202.2-.82%202.2-.82.44%201.1.16%201.92.08%202.12.51.56.82%201.27.82%202.15%200%203.07-1.87%203.75-3.65%203.95.29.25.54.73.54%201.48%200%201.07-.01%201.93-.01%202.2%200%20.21.15.46.55.38A8.01%208.01%200%200%200%2016%208c0-4.42-3.58-8-8-8'/%3e%3c/svg%3e" alt="github"></a>
-            <a href="https://www.linkedin.com/in/vwv8882"><img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20width='16'%20height='16'%20fill='white'%20class='bi%20bi-linkedin'%20viewBox='0%200%2016%2016'%3e%3cpath%20d='M0%201.146C0%20.513.526%200%201.175%200h13.65C15.474%200%2016%20.513%2016%201.146v13.708c0%20.633-.526%201.146-1.175%201.146H1.175C.526%2016%200%2015.487%200%2014.854zm4.943%2012.248V6.169H2.542v7.225zm-1.2-8.212c.837%200%201.358-.554%201.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4%203.226%202.4%203.934c0%20.694.521%201.248%201.327%201.248zm4.908%208.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878%201.232-.878.869%200%201.216.662%201.216%201.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274%200-1.845.7-2.165%201.193v.025h-.016l.016-.025V6.169h-2.4c.03.678%200%207.225%200%207.225z'/%3e%3c/svg%3e" alt="linkedin"></a>
+            <a href="https://github.com/88VwV88"><img src="images/github.svg" alt="github"></a>
+            <a href="https://www.linkedin.com/in/vwv8882"><img src="images/linkedin.svg" alt="linkedin"></a>
         </section>
     </footer>
 </body>

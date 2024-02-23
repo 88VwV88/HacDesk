@@ -1,0 +1,125 @@
+html {
+    background-color: var(--primary-light);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+    color: var(--primary-dark);
+    font-weight: 400;
+
+    display: grid;
+    grid-template-rows: 7.5rem 100% 7rem;
+    grid-template-columns: 100%;
+    grid-template-areas:
+        "header"
+        "main  "
+        "footer";
+}
+
+a {
+    color: var(--secondary-light);
+    text-decoration: none;
+}
+
+#title, header nav {
+    margin-left: 4rem;
+}
+
+nav {
+    margin: 4rem 15%;
+    background-color: var(--primary-light);
+    height: max-content;
+    width: 100%;
+    margin: 2rem;
+}
+nav > li {
+    border-bottom: 2px solid var(--primary-light);
+    padding: 2rem;
+    color: var(--primary-darks);
+    font-size: 1.7rem;
+    list-style: none;
+}
+
+#dialouge-box {
+    height: 60%;
+    width: 60%;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    background-color: var(--secondary-light);
+    display: none;
+    border: 4px solid #5b5655;
+    border-radius: 10px;
+    z-index: 2;
+}
+
+#dialouge-box a.submit {
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    background-color: var(--primary-dark);
+    color: var(--secondary-light);
+    border-radius: 20px;
+}
+
+#dialouge-box p {
+    font-size: 2rem;
+    color: var(--primary-dark);
+}
+
+#dialouge-box textarea {
+    width: 90%;
+    height: 60%;
+}
+
+#dialouge-box a.cancel {
+    font-size: 1.5rem;
+    border-radius: 10rem;
+    padding: 0.9rem;
+    color: var(--secondary-light);
+}
+
+.send-reviews .complaints-box:checked ~ #dialouge-box {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+canvas .cancel {
+    height: fit-content;
+    max-width: 50%;
+}
+
+#top-dialouge-box {
+    width: 95%;
+    height: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#complaints-box {
+    position: fixed;
+    top: 90%;
+    left: 5%;
+    opacity: 100;
+    height: 5rem;
+    width: 5rem;
+    z-index: 3;
+    opacity: 0;
+}
+
+.send {
+    position: fixed;
+    top: 90.5%;
+    left: 5.5%;
+    font-size: 3rem;
+    padding: 0.5rem;
+    background-color: var(--primary-light);
+    color: #4d4643;
+    border-radius: 10px;
+    border: 2px solid #403d39;
+}

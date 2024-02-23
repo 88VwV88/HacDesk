@@ -13,4 +13,4 @@ app.route('/', (_, res) => {
 
 app.listen(port, () => {
     console.log(`HackDesk running on port ${port}`)
-})
+});

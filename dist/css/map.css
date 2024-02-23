@@ -1,0 +1,17 @@
+body {
+    width: 100%;
+    height: 100%;
+}
+
+main {
+    display: block;
+    min-width: fit-content;
+    min-height: 40rem;
+    padding: 2rem;
+}
+
+#myMap {
+    border: solid black 5px;
+    height: 100%;
+    width: 100%;
+}
