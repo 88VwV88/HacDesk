@@ -16,6 +16,7 @@ for (var msg of data) {
     <br>${msg.Q2}
     <br>${msg.A2}`;
     ul[0].appendChild(li);
+
 }
 
 const question = document.getElementById('submit-article');

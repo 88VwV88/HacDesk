@@ -78,8 +78,6 @@ header nav{
 
 .main-outer-div{
     margin: 4rem 15%;
-    border-left: 2px solid #77726b;
-    border-right: 2px solid #75716c;
     height: max-content;
 }
 
@@ -88,22 +86,11 @@ header nav{
 }
 
 .main-inner-div li{
-    border-bottom:2px solid #75716c;
     padding: 2rem 2rem;
     color: #000000;
     font-size: 1.7rem;
     list-style: none;
 }
-
-/* .send-reviews {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    z-index: 200;
-    position: fixed;
-    background-color: rgb(0, 0, 0);
-} */
 
 .dialouge-box{
     height: 60%;
@@ -113,12 +100,11 @@ header nav{
     left: 20%;
     background-color: var(--secondary-light);
     display: none;
-    border: 4px solid #5b5655;
     border-radius: 10px;
     z-index: 2;
 }
 
-.dialouge-box a.submit{
+.dialouge-box button.submit{
     padding: 1rem 2rem;
     font-size: 2rem;
     background-color: #5b5655;
@@ -136,7 +122,7 @@ header nav{
     height: 60%;
 }
 
-.dialouge-box a.Cancel{
+.dialouge-box button.Cancel{
     font-size: 1.5rem;
     border-radius: 10rem;
     padding: 0.9rem;
@@ -144,11 +130,16 @@ header nav{
 }
 
 .send-reviews .Complaints-dialouge-box:checked ~ .dialouge-box{
-    display: block;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    opacity: 1;
+}
+
+.send-reviews .Complaints-dialouge-box:not(:checked) ~ .dialouge-box {
+    opacity: 0;
+    content: '';
 }
 
 .Cancel{
@@ -165,7 +156,7 @@ header nav{
 }
 
 .Complaints-dialouge-box{
-    position:fixed;
+    position: fixed;
     top: 90%;
     left: 5%;
     opacity: 100;
@@ -222,4 +213,8 @@ footer {
         height: 5rem;
         padding-left: 35%;
     }
+}
+
+.slot {
+    background-color: var(--secondary-light);
 }
