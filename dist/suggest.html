@@ -1,54 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/suggest.css">
+    <link rel="stylesheet" href="suggest.css">
+    <script src="https://kit.fontawesome.com/186234307f.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
-
 <body>
     <header style="grid-area: header">
-        <h1 id="title" style="font-size: 3rem"><a href="/">HackDesk</a></h1>
+        <h1 id="title"><a href="/">HackDesk</a></h1>
         <nav id="menu">
             <a class="btn" href="/">Home</a>
             <a class="btn" href="chat.html">ChatBox</a>
-            <a class="btn" href="comp.html">Complaints</a>
+            <a class="btn" href="suggest.html">FAQs</a>
         </nav>
     </header>
+
     <main>
-        <nav>
-                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore repellendus laudantium ratione ab
-                    maxime officia perspiciatis doloribus reiciendis saepe, ea et voluptatibus, beatae quae sed.
-                    Necessitatibus eius aliquam nulla molestias.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut
-                    optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni
-                    asperiores quae reiciendis nobis officia?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut
-                    optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni
-                    asperiores quae reiciendis nobis officia?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut
-                    optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni
-                    asperiores quae reiciendis nobis officia?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut
-                    optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni
-                    asperiores quae reiciendis nobis officia?</li>
-        </nav>
-        <div id="send-reviews">
-            <input type="checkbox" id="complaint-box">
-            <div id="dialouge-box">
-                <div id="top-dialouge-box">
-                    <a href="" id="cancel">&#10060;</a>
-                    <p>@john-doe</p>
+        <div class="main-outer-div">
+            <ul class="main-inner-div">
+                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore repellendus laudantium ratione ab maxime officia perspiciatis doloribus reiciendis saepe, ea et voluptatibus, beatae quae sed. Necessitatibus eius aliquam nulla molestias.</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
+                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
+            </ul>
+        </div>
+        
+        <div class="send-reviews">
+            <input type="checkbox" name="" id="" class="Complaints-dialouge-box">
+            <div class="dialouge-box">
+                <div class="top-dialouge-box">
+                    <a href="" class="Cancel">&#10060;</a>
+                    <p>USER-ID</p>
                 </div>
-                <textarea></textarea>
+                <textarea name="" id="" cols="" rows=""></textarea>
                 <a href="" class="submit">Submit Complaint</a>
             </div>
-            <i class="fa-solid fa-paper-plane .send"></i>
+            <!-- <p class="Send">Send</p> -->
+            <i class="fa-solid fa-paper-plane Send"></i>
         </div>
     </main>
+
     <footer style="grid-area: footer">
         <a href="https://www.hackmol.com"><img id="hackmol-logo" src="images/hackmol.svg" alt="hackmol logo"></a>
         <a href="https://gdsc.community.dev/dr-b-r-ambedkar-national-institute-of-technology-nit-jalandhar"><img
@@ -61,5 +55,4 @@
         </section>
     </footer>
 </body>
-
 </html>
