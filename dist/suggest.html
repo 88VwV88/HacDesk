@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/suggest.css">
     <script src="https://kit.fontawesome.com/186234307f.js" crossorigin="anonymous"></script>
+    <script type="module" src="js/suggest.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -19,26 +20,18 @@
 
     <main>
         <div class="main-outer-div">
-            <ul class="main-inner-div">
-                <li>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolore repellendus laudantium ratione ab maxime officia perspiciatis doloribus reiciendis saepe, ea et voluptatibus, beatae quae sed. Necessitatibus eius aliquam nulla molestias.</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
-                <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro officiis explicabo quaerat earum aut optio deleniti impedit voluptatem beatae. Distinctio adipisci voluptas, ex dignissimos magni asperiores quae reiciendis nobis officia?</li>
-            </ul>
+            <ul class="main-inner-div"></ul>
         </div>
-        
         <div class="send-reviews">
-            <input type="checkbox" name="" id="" class="Complaints-dialouge-box">
+            <input type="checkbox" class="Complaints-dialouge-box">
             <div class="dialouge-box">
                 <div class="top-dialouge-box">
-                    <a href="" class="Cancel">&#10060;</a>
-                    <p>USER-ID</p>
+                    <button class="Cancel" onclick="document.querySelector('.Complaints-dialouge-box').click()">&#10060;</button>
+                    <p>@john-doe</p>
                 </div>
-                <textarea name="" id="" cols="" rows=""></textarea>
-                <a href="" class="submit">Submit Complaint</a>
+                <textarea id="submit-article"></textarea>
+                <button class="submit">Submit</button>
             </div>
-            <!-- <p class="Send">Send</p> -->
             <i class="fa-solid fa-paper-plane Send"></i>
         </div>
     </main>

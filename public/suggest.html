@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/suggest.css">
     <script src="https://kit.fontawesome.com/186234307f.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="js/suggest.js"></script>
+    <script type="module" src="js/suggest.js"></script>
     <title>Document</title>
 </head>
 <body>
@@ -20,17 +20,17 @@
 
     <main>
         <div class="main-outer-div">
-            <ul class="main-inner-div" onload="initList()"></ul>
+            <ul class="main-inner-div"></ul>
         </div>
         <div class="send-reviews">
             <input type="checkbox" class="Complaints-dialouge-box">
-            <div class="dialouge-box" onclick="makeDialog()">
+            <div class="dialouge-box">
                 <div class="top-dialouge-box">
-                    <button class="Cancel" onclick="cancel()">&#10060;</button>
+                    <button class="Cancel" onclick="document.querySelector('.Complaints-dialouge-box').click()">&#10060;</button>
                     <p>@john-doe</p>
                 </div>
                 <textarea id="submit-article"></textarea>
-                <button href="" class="submit">Submit</button>
+                <button class="submit">Submit</button>
             </div>
             <i class="fa-solid fa-paper-plane Send"></i>
         </div>
