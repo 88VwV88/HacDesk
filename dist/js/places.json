@@ -1,0 +1,127 @@
+{
+    "key": "AuDuP4qlxNPP5rsm5gNgXNRT_-Zb24T_CUJ7lUR5eg8vtxV2IaJCG_XTlTUxN0Lx",
+    "origin": [31.396131584616917, 75.53578883251701],
+    "locations": [
+        {
+            "center": [31.396131584616917, 75.53578883251701],
+            "info": {
+                "title": "Admin Block",
+                "subTitle": "Admin Block",
+                "text": "0"
+            }
+        },
+        {
+            "center": [31.39822124307628, 75.53504723599318],
+            "info": {
+                "title": "NIT J Workshop",
+                "subTitle": "NITJ Business Incubator",
+                "text": "1"
+            }
+        },
+        {
+            "center": [31.397194701706955, 75.5375167271428],
+            "info": {
+                "title": "Lecture Theatre",
+                "subTitle": "LT-101 to LT-404",
+                "text": "2"
+            }
+        },
+        {
+            "center": [31.39503102749282, 75.53576824759647],
+            "info": {
+                "title": "IT CSE Building",
+                "subTitle": "CSE Departement",
+                "text": "3"
+            }
+        },
+        {
+            "center": [31.39649301352915, 75.53667616341669],
+            "info": {
+                "title": "Campus Cafe",
+                "subTitle": "Fast Food",
+                "text": "4"
+            }
+        },
+        {
+            "center": [31.3972182448077, 75.53145247900606],
+            "info": {
+                "title": "NITJ Main Ground",
+                "subTitle": "Sports Ground / Cricket, Football and Athletics",
+                "text": "5"
+            }
+        },
+        {
+            "center": [31.39214120063175, 75.53613034235131],
+            "info": {
+                "title": "NITJ Temple",
+                "subTitle": "Temple",
+                "text": "6"
+            }
+        },
+        {
+            "center": [31.394655422685123, 75.5336843226328],
+            "info": {
+                "title": "OAT",
+                "subTitle": "Open Air Theatre",
+                "text": "7"
+            }
+        },
+        {
+            "center": [31.397000222141056, 75.53402603573639],
+            "info": {
+                "title": "Snackers",
+                "subTitle": "Food Plaza",
+                "text": "9"
+            }
+        },
+        {
+            "center": [31.39631997082061, 75.53435856105125],
+            "info": {
+                "title": "Central Seminar Hall",
+                "subTitle": "CSH",
+                "text": "10"
+            }
+        },
+        {
+            "center": [31.39655040925391, 75.534100623255],
+            "info": {
+                "title": "Student Activity Center",
+                "subTitle": "New SAC/Gym/Clubs",
+                "text": "11"
+            }
+        },
+        {
+            "center": [31.39734209320578, 75.53438191029727],
+            "info": {
+                "title": "Science Block",
+                "subTitle": "Classes/Labs",
+                "text": "12"
+            }
+        },
+        {
+            "center": [31.394248257958058, 75.53756833061394],
+            "info": {
+                "title": "Dispensary",
+                "subTitle": "Medicine",
+                "text": "13"
+            }
+        },
+        {
+            "center": [31.395435718504068, 75.53258302756815],
+            "info": {
+                "title": "Gymnasium",
+                "subTitle": "Badminton Court",
+                "text": "14"
+            }
+        },
+        {
+            "center": [31.395970748108166, 75.53756833061237],
+            "info": {
+                "title": "Administrative Block 2",
+                "subTitle": "Admin Block 2",
+                "text": "15"
+            }
+        }
+
+    ]
+}
