@@ -16,7 +16,6 @@ for (var msg of data) {
     <br>${msg.Q2}
     <br>${msg.A2}`;
     ul[0].appendChild(li);
-
 }
 
 const question = document.getElementById('submit-article');
@@ -43,11 +42,7 @@ btn.addEventListener('click', () => {
     }
 
     console.log(messg);
-<<<<<<< HEAD
     document.querySelector('.Complaints-dialouge-box').click();
-=======
-    document.querySelector('.Complaints-dialouge-box-box').click();
->>>>>>> 7085d816421160c60efe69aa772d91587b3bda77
 
     ul[0].appendChild(li);
     messg = '';

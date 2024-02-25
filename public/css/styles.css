@@ -52,12 +52,14 @@ body {
 main {
     margin: 2rem 0;
     padding: 0 1rem;
-    background: url('../images/nitj.jpg');
+    background: no-repeat url('../images/nitj.jpg');
+    background-clip: border-box;
 
     display: grid;
     grid-template-columns: 2rem auto 2rem;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr;
     grid-template-areas:
+        ". title ."
         ". team ."
         ". p1   ."
         ". p2   ."
@@ -127,8 +129,8 @@ section {
     font-family: 'Kode Mono', 'Consolas';
     text-align: center;
     color: var(--secondary-light);
-    width: 100%;
-    font-size: 10rem;    
+
+    font-size: 6rem;
 
     grid-area: title;
 }
@@ -189,11 +191,15 @@ section {
         grid-template-areas:
             ".  .       .      ."
             ".  title   title  ."
-            ".  .      team   ."
-            ".  p1      p2   ."
-            ".  p3       p4      ."
-            ". . . .";
+            ".  .       team   ."
+            ".  p1      p2     ."
+            ".  p3      p4     ."
+            ".  .       .      .";
         column-gap: 2rem;
+    }
+
+    #title {
+        font-size: 10rem;
     }
 
     #hackmol-logo {
